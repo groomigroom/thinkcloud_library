@@ -1,1 +1,392 @@
+@charset "utf-8";
 
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #fff7ee;
+    color: #3e9dac;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    letter-spacing: -0.02em;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+h2 {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+    margin: 0;
+}
+
+.contain {
+    width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#header {
+    height: 90px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 200px;
+    height: 90px;
+}
+
+#gnb {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 22.5px;
+    position: relative;
+    z-index: 100;
+    height: 45px;
+    overflow: hidden;
+    transition: all 0.6s ease 0s;
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+}
+
+#gnb>li>a {
+    display: flex;
+    width: 180px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+#gnb>li>ul>li>a {
+    display: flex;
+    width: 180px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#gnb:hover {
+    height: 165px;
+}
+
+#gnb li:hover>a {
+    background-color: #001a1f;
+    color: #eaeaea;
+}
+
+/*슬라이드*/
+#photo {
+    margin-top: 45px;
+    height: 450px;
+    background-image: url('./img/thinkcloud-photo-div.jpg');
+    position: relative;
+}
+
+#photo>p {
+    background-color: rgb(255, 255, 255, 0);
+    position: absolute;
+    margin: 45px;
+    color: #eaeaea;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    left: 0.5px;
+}
+
+#contents {
+    margin-top: 45px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#first {
+    width: 677.5px;
+    height: 400px;
+}
+
+.firsth {
+    margin-bottom: 32px;
+}
+
+#firstli>li {
+    display: flex;
+    justify-content: space-between;
+    line-height: 200%;
+    border-bottom: 0.5px solid #3e9dac;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+}
+
+.firstsp {
+    width: 100px;
+    text-align: left;
+}
+
+#second {
+    width: 677.5px;
+    height: 400px;
+}
+
+#second>h2 {
+    margin-bottom: 32px;
+}
+
+/*테이블*/
+.secondtr {
+    width: 640px;
+    height: 330px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+}
+
+table.secondtr {
+    border-collapse: collapse;
+}
+
+table.secondtr td {
+    border: 0.5px solid #3e9dac;
+}
+
+.secondtr tr:nth-child(1) {
+    height: 22px;
+}
+
+.secondtr tr:nth-child(1)>td {
+    border: 0.5px solid #eaeaea;
+    background-color: #3e9dac;
+    color: #eaeaea;
+}
+
+.secondtr tr:nth-child(n + 2) {
+    height: 44px;
+}
+
+.today {
+    background-color: #ff8f8f44;
+}
+
+.culture_hangsa {
+    width: 1400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.culture_hangsa_down {
+    width: 1400px;
+    height: 348px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.culture_hangsa_img {
+    width: 678px;
+    height: 316px;
+    overflow: hidden;
+}
+
+.culture_hangsa_img_train {
+    width: 1356px;
+    height: 316px;
+    display: flex;
+}
+
+.culture_hangsa_img_train>img{
+    width: 678px;
+    height: 316px;
+}
+
+.culture_hangsa_soge>p {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 160%;
+}
+
+.idal_book {
+    width: 1400px;
+    height: 326.8px;
+    margin: 0 auto 32px auto;
+}
+
+.idal_booklist {
+    width: 1400px;
+    height: 244.8px;
+    margin-bottom: 16px;
+}
+
+.idal_realbooklist {
+    width: 896px;
+    height: 244.8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.idal_realbook_can {
+    width: 200px;
+    height: 244.8px;
+}
+
+.idal_realbook_can>img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.idal_realbook_can>p {
+    width: 200px;
+    height: 44.8px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    line-height: 160%;
+    margin: 0;
+    vertical-align: middle;
+    margin-top: 0;
+
+}
+
+.idal_book_endpp {
+    width: 1400px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 14px;
+}
+
+footer {
+    height: 50px;
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-size: 14px;
+    left: 0.5px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+#footerfirst {
+    margin-left: 10px;
+}
+
+#footerthird {
+    margin-right: 10px;
+}
+
+/*인사말용*/
+#insa {
+    height: 500px;
+    margin-top: 45px;
+}
+
+/*공지사항용*/
+#gongji {
+    height: 500px;
+    margin-top: 45px;
+}
+
+/*오시는길용*/
+#anneroad {
+    margin-top: 45px;
+}
+
+#anneroadimg {
+    margin-top: 45px;
+}
+
+/*연락처용*/
+#annenumber {
+    margin-top: 45px;
+}
+
+#annenumbertb>td {
+    border: 1px solid #3e9dac;
+}
