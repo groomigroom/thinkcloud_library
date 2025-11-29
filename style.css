@@ -66,7 +66,7 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #fff7ee;
+
     color: #3e9dac;
     list-style: none;
     box-sizing: border-box;
@@ -76,6 +76,7 @@ html {
     font-family: 'Pretendard';
     font-size: 16px;
     letter-spacing: -0.02em;
+    font-weight: 500;
 }
 
 a {
@@ -92,6 +93,10 @@ h2 {
     margin: 0;
 }
 
+body {
+    background-color: #fff7ee;
+}
+
 .contain {
     width: 1400px;
     margin-right: auto;
@@ -100,7 +105,6 @@ h2 {
 
 #header {
     height: 90px;
-    margin-top: 45px;
     display: flex;
     justify-content: space-between;
 }
@@ -108,51 +112,54 @@ h2 {
 #logo {
     width: 200px;
     height: 90px;
+    cursor: pointer;
 }
 
 #gnb {
     display: flex;
     margin-right: 30px;
-    margin-top: 22.5px;
+    margin-top: 45px;
     position: relative;
     z-index: 100;
     height: 45px;
     overflow: hidden;
     transition: all 0.6s ease 0s;
     font-family: 'Pretendard';
-    font-weight: 300;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
+    background-color: #f9f1e8;
 }
 
-#gnb>li>a {
-    display: flex;
+#gnb>li>p {
     width: 180px;
     height: 45px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-#gnb>li>ul>li>a {
+#gnb>li>ul>li>p {
     display: flex;
     width: 180px;
     height: 30px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 #gnb:hover {
     height: 165px;
 }
 
-#gnb li:hover>a {
+#gnb li:hover>p {
     background-color: #001a1f;
     color: #eaeaea;
 }
 
 /*슬라이드*/
 #photo {
-    margin-top: 45px;
     height: 450px;
     background-image: url('./img/thinkcloud-photo-div.jpg');
     position: relative;
@@ -170,26 +177,41 @@ h2 {
 }
 
 #contents {
-    margin-top: 45px;
-    height: 400px;
+    height: 336px;
     display: flex;
     justify-content: space-between;
 }
 
 #first {
-    width: 677.5px;
-    height: 400px;
+    width: 700px;
+    height: 336px;
+    background-color: #fff4e9;
 }
 
 .firsth {
-    margin-bottom: 32px;
+    width: 84px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #dceaea;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+#firstli {
+    width: 670px;
+    margin-left: 15px;
 }
 
 #firstli>li {
     display: flex;
     justify-content: space-between;
-    line-height: 200%;
     border-bottom: 0.5px solid #3e9dac;
+    line-height: 200%;
+
     font-family: 'Pretendard';
     font-weight: 500;
     font-size: 14px;
@@ -202,22 +224,33 @@ h2 {
 }
 
 #second {
-    width: 677.5px;
-    height: 400px;
+    width: 700px;
+    height: 336px;
+    background-color: #fff2e9;
 }
 
 #second>h2 {
-    margin-bottom: 32px;
+    width: 105px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #dceaea;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
 }
 
 /*테이블*/
 .secondtr {
-    width: 640px;
-    height: 330px;
+    width: 670px;
+    height: 261px;
     font-family: 'Pretendard';
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
+    margin-left: 15px;
 }
 
 table.secondtr {
@@ -229,7 +262,7 @@ table.secondtr td {
 }
 
 .secondtr tr:nth-child(1) {
-    height: 22px;
+    height: 23px;
 }
 
 .secondtr tr:nth-child(1)>td {
@@ -248,52 +281,114 @@ table.secondtr td {
 
 .culture_hangsa {
     width: 1400px;
-    height: 400px;
+    height: 421px;
     margin: 0 auto;
+    position: relative;
+    background-color: #ffefe1;
+}
+
+.culture_hangsa_firsth {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 105px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #dceaea;
 }
 
 .culture_hangsa_down {
+    position: absolute;
+    top: 60px;
+    left: 0;
     width: 1400px;
-    height: 348px;
+    height: 316px;
     display: flex;
-    justify-content: space-between;
 }
 
 .culture_hangsa_img {
-    width: 678px;
+    width: 700px;
     height: 316px;
-    overflow: hidden;
+    position: relative;
 }
 
-.culture_hangsa_img_train {
-    width: 1356px;
-    height: 316px;
-    display: flex;
+.culture_hangsa_img>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.6s ease 0s;
 }
 
-.culture_hangsa_img_train>img{
-    width: 678px;
-    height: 316px;
+.culture_hangsa_img>img.on {
+    opacity: 1;
 }
 
-.culture_hangsa_soge>p {
+.culture_hangsa_img_two {
+    width: 700px;
+    height: 316px;
+    position: relative;
+}
+
+.culture_hangsa_img_two>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+}
+
+.culture_hangsa_img_two>img.on {
+    opacity: 1;
+}
+
+.culture_hangsa_down_pp {
+    width: 1400px;
+    height: 45px;
+    padding: 15px;
+    position: absolute;
+    top: 376px;
+    left: 0;
+}
+
+.culture_hangsa_down_pp>p {
     font-family: 'Pretendard';
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
-    line-height: 160%;
+    line-height: 100%;
 }
 
 .idal_book {
     width: 1400px;
-    height: 326.8px;
-    margin: 0 auto 32px auto;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff4e9;
+}
+
+.idal_book_firsth {
+    width: 122px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #dceaea;
+    position: absolute;
+    top: 15px;
+    left: 15px;
 }
 
 .idal_booklist {
     width: 1400px;
     height: 244.8px;
-    margin-bottom: 16px;
+    position: absolute;
+    top: 60px;
+    left: 0;
 }
 
 .idal_realbooklist {
@@ -313,6 +408,7 @@ table.secondtr td {
     display: block;
     width: 200px;
     height: 200px;
+    transition: all 0.3s ease 0s;
 }
 
 .idal_realbook_can>p {
@@ -327,11 +423,18 @@ table.secondtr td {
     margin: 0;
     vertical-align: middle;
     margin-top: 0;
-
 }
 
 .idal_book_endpp {
     width: 1400px;
+    height: 45px;
+    padding: 15px;
+    position: absolute;
+    top: 304.8px;
+    left: 0;
+}
+
+.idal_book_endpp>p {
     font-family: 'Pretendard';
     font-weight: 500;
     font-size: 14px;
@@ -339,12 +442,16 @@ table.secondtr td {
     line-height: 14px;
 }
 
+.idal_realbook_can:hover>img {
+    width: 205px;
+    height: 205px;
+}
+
 footer {
     height: 50px;
     font-family: 'Pretendard';
     font-weight: 300;
     font-size: 14px;
-    left: 0.5px;
 }
 
 #footer {
@@ -362,31 +469,174 @@ footer {
 }
 
 /*인사말용*/
-#insa {
+#thinkcloud_anne_insamal {
     height: 500px;
-    margin-top: 45px;
+    width: 1400px;
+    background-color: #fff4e9;
+    margin: 0 auto;
+    position: relative;
 }
 
-/*공지사항용*/
-#gongji {
-    height: 500px;
-    margin-top: 45px;
+#thinkcloud_anne_insamal>h2 {
+    width: 201px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #dceaea;
+}
+
+#thinkcloud_anne_insamal>p {
+    position: absolute;
+    width: 1310px;
+    height: 410px;
+    line-height: 160%;
+    top: 60px;
+    left: 45px;
 }
 
 /*오시는길용*/
-#anneroad {
-    margin-top: 45px;
+#thinkcloud_anne_osinegil {
+    height: 534px;
+    width: 1400px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff4e9;
 }
 
-#anneroadimg {
-    margin-top: 45px;
+#thinkcloud_anne_osinegil>h2{
+    width: 222px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #dceaea;
 }
 
+#thinkcloud_anne_osinegil>iframe {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+}
 /*연락처용*/
-#annenumber {
-    margin-top: 45px;
+#thinkcloud_anne_phonenumber{
+    width: 1400px;
+    height: 475px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff4e9;
 }
 
-#annenumbertb>td {
+#thinkcloud_anne_phonenumber>h2{
+    width: 201px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #dceaea;
+}
+
+#thinkcloud_anne_phonenumber>table{
+    width: 400px;
+    height: 400px;
+    border-collapse: collapse;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+}
+#thinkcloud_anne_phonenumber>table>tbody>tr>td{
     border: 1px solid #3e9dac;
+    padding-left: 10px;
+}
+#thinkcloud_anne_phonenumber>table>tbody>tr>td:nth-child(1){
+    background-color: #3e9dac;
+    color: #eaeaea;
+    border: 1px solid #eaeaea;
+}
+
+/*국내도서용*/
+
+#thinkcloud_book_korea {
+    width: 1400px;
+    height: 1351px;
+    position: relative;
+    margin: 0 auto;
+
+    background-color: #fff4e9;
+}
+
+#thinkcloud_book_korea>h2{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #dceaea;
+}
+
+.thinkcloud_book_korea_box_full{
+    width: 915px;
+    height: 1291px;
+    position: absolute;
+    top: 60px;
+    left: 242.5px;
+    background-color: coral;
+}
+.thinkcloud_book_box_full{
+    width: 915px;
+    height: 300px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 191, 173);
+}
+.thinkcloud_book_box_full_book_image{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(122, 73, 56);
+}
+.thinkcloud_book_box_full_book_pp{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(122, 73, 56);
+}
+.thinkcloud_book_korea_box_full_bottom_pp{
+    text-align: center;
+}
+.thinkcloud_book_korea_box_full_bottom_pp>span{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/*북퀴즈 이벤트용*/
+#thinkcloud_online_bookquiz {
+    width: 1400px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+#thinkcloud_online_bookquiz>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
 }
