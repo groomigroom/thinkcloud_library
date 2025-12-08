@@ -1,3 +1,6 @@
 중요 색상
 
 #3e9dac
+
+
+border-radius: 3px;
