@@ -2,5 +2,8 @@
 
 #3e9dac
 
+전체
+
+background-color: #fff7ee;
 
 border-radius: 3px;
