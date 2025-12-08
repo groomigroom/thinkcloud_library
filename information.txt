@@ -22,3 +22,5 @@ font-family: 'Pretendard';
 line-height: 160%;
     font-weight: 400;
     color: #001a1f;
+
+기본 마진 45px으로
