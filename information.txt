@@ -16,3 +16,9 @@ font-family: 'Pretendard';
     letter-spacing: -0.02em;
     font-weight: 600;
     color: #001a1f;
+
+세부 페이지 본문용 font
+
+line-height: 160%;
+    font-weight: 400;
+    color: #001a1f;
